@@ -73,6 +73,7 @@ Make sure you have the following supplies:
 A supplement to the IRIS Operation Manual.
 
 21. Follow First Flight procedure on pages 13-15 of the IRIS Operation Manual. Before you begin, ensure the RC controller is in AUTO mode and RTL (return to launch) is set to OFF.
+
 ![First Flight](/images/ctrl_settings.jpg)
 
 22. Wait for the drone to finish its flight.
