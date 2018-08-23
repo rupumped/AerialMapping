@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Path Planner -- MAPSAN</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" style="height: 80%"></div>
+    <div id="input" stype="height: 15%">
+      <form> Focal Length (mm): <input type="text" id="focal" placeholder="9.5"> Working Distance (ft): <input type="text" id="WD" placeholder="200"> Sensor Height (in): <input type="text" id="sensorHeight" placeholder="1"> Sensor Width (in): <input type="text" id="sensorWidth" placeholder="2.3"> Overlap (%): <input type="text" id="overlap" placeholder="80"></form>
+    </div>
+    <div id="button" style="height: 5%">
+      <button id="start" onclick="startPath()">Begin Path Planner</button>
+      <button id="download" onclick="downloadCSV()">Download CSV</button>
+    </div>
+    <div>
+      <p><span>Upload aerial image:</span><input type="file" id="stitchedPhoto" onchange="getPhoto()"><span id="photoText"></span></p>
+      <p><span>Upload GPS points:</span><input type="file" id="GPSpoints" onchange="getGPS()"><span id="GPSText"></span></p>
+    </div>
+    <script src="pathPlannerUI.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmUl20_wmcwxMX-XTRvh7rA59gYnh7B4M&libraries=drawing,geometry&callback=initMap" async defer></script>
+  </body>
+</html>
