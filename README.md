@@ -64,7 +64,7 @@ Make sure you have the following supplies:
 ![Press START](/images/press_start.jpg)
 
 19. Confirm both R and S are followed by "3SER," then press "START" to begin charging.
-![Press START](/images/press_confirm.jpg)
+![Press START](/images/press_enter.jpg)
 
 20. Once the voltage reaches nominal, press "BATT TYPE" to stop charging.
 ![Press BATT TYPE](/images/press_stop.jpg)
